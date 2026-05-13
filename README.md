@@ -30,4 +30,6 @@ There is now a simple design in the bottom left to use in OBS
 
 ## Notes
 
-All this app does is listen to changes on the bottom bar and modifies the elements to display a smaller, clean design as songs change. There is some CSS to clean up the design, but it's nothing special.
+All this extension does is listen to changes on the bottom bar and modify the elements to display a smaller, clean design as songs change. There is some CSS to clean up the design, but it's nothing special.
+
+The tab with Youtube Music must remain selected, and the window maximized otherwise OBS will render it as a 0x0 area. However, the window can be put in the background. The tab can be used to navigate around Youtube Music as the smaller section doesn't normally change as you do.
