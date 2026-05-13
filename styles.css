@@ -1,0 +1,85 @@
+
+#left-controls {
+    display: none;
+}
+
+#right-controls {
+    display: none;
+}
+
+.middle-controls-buttons.style-scope.ytmusic-player-bar {
+    display: none;
+}
+
+.middle-controls.style-scope.ytmusic-player-bar {
+    display: flex;
+    flex-direction: row;
+    justify-items: start;
+    margin-left: 7px;
+    justify-content: flex-start;
+}
+
+ytmusic-player-bar.style-scope.ytmusic-app {
+    width: 300px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#player-bar-background {
+    width: 300px;
+}
+
+img.thumbnail.style-scope.ytmusic-player-bar {
+    display: block !important;
+}
+
+#progress-bar {
+    width: 300px !important;
+    left: -25px !important;
+
+    --paper-slider-height: 3px !important;
+    
+    /* Progress Bar */
+    --paper-slider-active-color: #c33535 !important;
+    /* Loading Bar */
+    --paper-slider-secondary-color: rgb(255 255 255 / 0%) !important;
+    /* Remaining Space */
+    --paper-slider-container-color: rgba(102, 102, 102, 0) !important;
+}
+
+#sliderBar.tp-yt-paper-slider {
+    top: 68px;
+    overflow: visible;
+    z-index: 100;
+    position: fixed;
+}
+
+.obs-scroll-wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+}
+
+.obs-scroll-inner {
+    display: inline-block;
+    white-space: nowrap;
+    will-change: transform;
+}
+
+.obs-scroll-inner.animate {
+    animation-name: obs-marquee-bounce;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes obs-marquee-bounce {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(var(--scroll-distance));
+    }
+}
